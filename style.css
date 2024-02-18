@@ -248,6 +248,7 @@ news::-webkit-scrollbar{
     font-weight: 700;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     gap: 12px;
 }
 .m_sticks {
@@ -490,6 +491,45 @@ news::-webkit-scrollbar{
 
 
 
+
+
+
+
+.explore_section {
+    margin: 24px 0px;
+}
+
+.explore_box {
+    width: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#filter {
+    color: #fff;
+    font-size: 64px;
+    cursor: pointer;
+}
+.input_sec {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 48px;
+    margin: 0;
+}
+.explore_input {
+    height: 40px;
+    width: 85%;
+    border: none;
+    font-size: 20px;
+}.explore_input:focus {
+    outline: none;
+}
+.mrbtm {
+    margin-bottom: 12px;
+}
 
 
 
