@@ -226,21 +226,29 @@ news::-webkit-scrollbar{
 }
 
 
-.settings {
+#edit {
+    cursor: pointer;
+}.change {
+    justify-content: space-between;
+}
+
+
+.settings_section {
+    height: 850px;
     display: flex;
     flex-direction: column;
-    align-items: self-start;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
 }
 .sections_header {
     width: 100%;
     font-size: 54px;
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 700;
-}
-.settings_section {
     display: flex;
-    flex-direction: column;
-    gap: 8px;
+    align-items: center;
+    gap: 12px;
 }
 .m_sticks {
     display: flex;
@@ -250,6 +258,11 @@ news::-webkit-scrollbar{
     border-radius: 20px;
     padding-left: 24px;
     margin-bottom: 24px;
+    text-align: start;
+    color: var(--blue);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
 }
 .s_n_width {
     width: 580px;
@@ -354,7 +367,14 @@ news::-webkit-scrollbar{
 
 
 
-
+.create_section {
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+}
 
 .post_section {
     width: 750px;
@@ -366,10 +386,21 @@ news::-webkit-scrollbar{
     align-items: center;
 }
 
+.col_flex {
+    display: flex;
+    gap: 16px;
+}
 .post_icons {
     height: 96px;
     width: 100%;
-    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#create {
+    color: var(--blue);
+    font-size: 64px;
+    cursor: pointer;
 }
 .post_write {
     height: 80%;
@@ -436,18 +467,70 @@ news::-webkit-scrollbar{
     background: var(--gradient-light-blue);
     border-radius: 32px;
     padding: 32px 48px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 .aboutus_p1 {
     font-size: 28px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
     color: var(--blue);
-    font-weight: 600;
+    font-weight: 700;
 }
 .aboutus_p2 {
     color: var(--blue);
-    font-size: 20px;
+    font-size: 24px;
+    width: 420px;
+    font-weight: 600;
+
 }
 
+
+
+
+
+
+
+
+
+.profile_section {
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+}
+.profile_photo {
+    color: var(--blue);
+    width: 160px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#prfl {
+    font-size: 100px;
+    padding: 0;
+}
+#pp {
+    font-size: 150px;
+}
+.profile_box {
+    width: 800px;
+    background-color: #fff;
+    padding: 32px 48px;
+    border-radius: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+.profile_left_side {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 
 @media only screen and (min-width: 1250px) {
     .main {
